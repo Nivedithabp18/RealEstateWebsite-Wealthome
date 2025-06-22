@@ -1,0 +1,87 @@
+/* Minimal Navbar adjustments for login page */
+.header {
+    background-color: var(--primary-40);
+    height: 72px;
+    box-shadow: var(--shadow-1);
+}
+
+/* Already shared login-section & form styles go here */
+.login-section {
+    padding-block: 120px 60px;
+    background-color: var(--neutral-98);
+}
+
+.login-container {
+    max-width: 400px;
+    background-color: var(--neutral-100);
+    padding: 32px;
+    border-radius: var(--radius-large);
+    box-shadow: var(--shadow-3);
+    margin-inline: auto;
+}
+
+.login-title {
+    text-align: center;
+    margin-bottom: 24px;
+    color: var(--neutral-10);
+}
+
+.login-form label {
+    display: block;
+    margin-bottom: 4px;
+    font-size: var(--fs-label-medium);
+    font-weight: var(--weight-semiBold);
+    color: var(--neutral-20);
+}
+
+.login-form input {
+    width: 100%;
+    padding: 12px;
+    border-radius: var(--radius-medium);
+    background-color: var(--neutral-95);
+    border: none;
+    margin-bottom: 20px;
+    font-size: var(--fs-body-medium);
+    color: var(--neutral-10);
+}
+
+.login-form input:focus {
+    background-color: var(--neutral-90);
+    outline: 2px solid var(--primary-100);
+}
+
+.login-btn {
+    width: 100%;
+}
+
+.login-footer {
+    text-align: center;
+    margin-top: 20px;
+    color: var(--neutral-60);
+}
+
+.login-footer a {
+    color: var(--primary-100);
+    font-weight: var(--weight-semiBold);
+    text-decoration: none;
+}
+
+.login-footer a:hover {
+    text-decoration: underline;
+}
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+}
+
+.wrapper {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-content {
+    flex: 1;
+}
