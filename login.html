@@ -1,95 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <title>Login | Wealthome</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- Link main CSS -->
-  <link rel="stylesheet" href="./assets/css/style.css">
-  <!-- If you use a separate login.css -->
-  <link rel="stylesheet" href="login.css">
-  <!-- Material Icons (if not already included) -->
-  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded" rel="stylesheet">
-<!--   stylesheet for login page
- --> 
- <link rel="stylesheet" href="./assets/css/style.css">
+    <meta charset="UTF-8">
+    <title>Login | Wealthome</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Link main CSS -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <!-- Material Icons (if not already included) -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded" rel="stylesheet">
+    <!--   stylesheet for login page
+ -->
+    <link rel="stylesheet" href="./assets/css/login.css">
 </head>
+
 <body>
 
-  <!-- HEADER with Logo & Get Started -->
-  <header class="header" data-header>
-    <div class="container">
-      <a href="index.html" class="logo">
-        <img src="images/logo.png" width="160" height="50" alt="Wealthome logo">
-      </a>
+    <div class="wrapper">
+        <!-- HEADER with Logo & Get Started -->
+        <header class="header" data-header>
+            <div class="container">
+                <a href="index.html" class="logo">
+                    <img src="./assets/images/logo.png" width="160" height="50" alt="Wealthome logo">
+                </a>
 
-      <div class="navbar-wrapper">
-        <a href="index.html#hero" class="btn btn-fill">Get Started</a>
-      </div>
+                <div class="navbar-wrapper">
+                    <a href="register.html" class="btn btn-fill">Get Started</a>
+                </div>
+            </div>
+        </header>
+
+        <!-- LOGIN SECTION -->
+        <main class="main-content"> <!-- ✅ Add this wrapper -->
+            <section class="login-section section">
+                <div class="login-container">
+                    <h2 class="login-title title-large">Welcome Back</h2>
+                    <form class="login-form">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" required>
+
+                        <label for="password">Password</label>
+                        <input type="password" id="password" name="password" required>
+
+                        <button type="submit" class="btn btn-fill login-btn">Login</button>
+                    </form>
+
+                    <div class="login-footer">
+                        Don't have an account? <a href="register.html">Get Started</a>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <!-- FOOTER -->
+        <footer class="footer">
+            <div class="footer-top">
+                <div class="container">
+
+                    <div class="footer-brand">
+                        <a href="index.html" class="logo">
+                            <img src="./assets/images/logo.png" width="160" height="50" alt="Wealthome logo">
+                        </a>
+                        <p class="footer-text">Your dream home is just a few clicks away. Explore the best properties
+                            today.</p>
+                    </div>
+
+                    <ul class="footer-list">
+                        <li class="footer-list-title title-small">Company</li>
+                        <li><a href="index.html#about" class="footer-link">About</a></li>
+                        <li><a href="index.html#property" class="footer-link">Properties</a></li>
+                    </ul>
+
+                    <ul class="footer-list">
+                        <li class="footer-list-title title-small">Support</li>
+                        <li><a href="#" class="footer-link">Contact</a></li>
+                        <li><a href="#" class="footer-link">Help Center</a></li>
+                    </ul>
+
+                    <ul class="footer-list">
+                        <li class="footer-list-title title-small">Social</li>
+                        <li><a href="#" class="footer-link">Instagram</a></li>
+                        <li><a href="#" class="footer-link">LinkedIn</a></li>
+                    </ul>
+
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="container">
+                    <p class="body-medium">© 2025 Wealthome. All rights reserved.</p>
+                </div>
+            </div>
+        </footer>
     </div>
-  </header>
-
-  <!-- LOGIN SECTION -->
-  <section class="login-section section">
-    <div class="login-container">
-      <h2 class="login-title title-large">Welcome Back</h2>
-      <form class="login-form">
-        <label for="email">Email Address</label>
-        <input type="email" id="email" name="email" required>
-
-        <label for="password">Password</label>
-        <input type="password" id="password" name="password" required>
-
-        <button type="submit" class="btn btn-fill login-btn">Login</button>
-      </form>
-
-      <div class="login-footer">
-        Don't have an account?
-        <a href="index.html#hero">Get Started</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- FOOTER -->
-  <footer class="footer">
-    <div class="footer-top">
-      <div class="container">
-
-        <div class="footer-brand">
-          <a href="index.html" class="logo">
-            <img src="images/logo.png" width="160" height="50" alt="Wealthome logo">
-          </a>
-          <p class="footer-text">Your dream home is just a few clicks away. Explore the best properties today.</p>
-        </div>
-
-        <ul class="footer-list">
-          <li class="footer-list-title title-small">Company</li>
-          <li><a href="index.html#about" class="footer-link">About</a></li>
-          <li><a href="index.html#property" class="footer-link">Properties</a></li>
-        </ul>
-
-        <ul class="footer-list">
-          <li class="footer-list-title title-small">Support</li>
-          <li><a href="#" class="footer-link">Contact</a></li>
-          <li><a href="#" class="footer-link">Help Center</a></li>
-        </ul>
-
-        <ul class="footer-list">
-          <li class="footer-list-title title-small">Social</li>
-          <li><a href="#" class="footer-link">Instagram</a></li>
-          <li><a href="#" class="footer-link">LinkedIn</a></li>
-        </ul>
-
-      </div>
-    </div>
-
-    <div class="footer-bottom">
-      <div class="container">
-        <p class="body-medium">© 2025 Wealthome. All rights reserved.</p>
-      </div>
-    </div>
-  </footer>
-
-  <script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
+
 </html>
